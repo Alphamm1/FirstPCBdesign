@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name Resistor_SMD)(type KiCad)(uri "C:/New folder/kicad-footprints-master/Resistor_SMD.pretty")(options "")(descr ""))
+  (lib (name Connector_PinSocket_2.54mm)(type KiCad)(uri "C:/New folder/kicad-footprints-master/Connector_PinSocket_2.54mm.pretty")(options "")(descr ""))
+  (lib (name freetronics_footprints)(type KiCad)(uri "C:/New folder (2)/freetronics_kicad_library-master/freetronics_footprints.pretty")(options "")(descr ""))
+  (lib (name Connector_PinHeader_2.54mm)(type KiCad)(uri "C:/New folder/kicad-footprints-master/Connector_PinHeader_2.54mm.pretty")(options "")(descr ""))
+  (lib (name LED_SMD)(type KiCad)(uri "C:/New folder/kicad-footprints-master/LED_SMD.pretty")(options "")(descr ""))
+)

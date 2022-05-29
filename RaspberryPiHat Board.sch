@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+LIBS:RaspberryPiHat Board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi Hat "
+Date "2021-07-15"
+Rev "V01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 60F08B46
+P 5700 3700
+F 0 "J1" H 6400 5225 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 6400 5125 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 5700 3700 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 60F08BC5
+P 2450 2700
+F 0 "SW1" H 2450 3025 50  0000 C CNN
+F 1 "SW_DPST" H 2450 2934 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 2450 2700 50  0001 C CNN
+F 3 "" H 2450 2700 50  0001 C CNN
+	1    2450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60F08C3B
+P 7125 3650
+F 0 "R3" H 7195 3696 50  0000 L CNN
+F 1 "R" H 7195 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7055 3650 50  0001 C CNN
+F 3 "~" H 7125 3650 50  0001 C CNN
+	1    7125 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60F08C8F
+P 2725 3400
+F 0 "R1" H 2795 3446 50  0000 L CNN
+F 1 "R1" H 2795 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2655 3400 50  0001 C CNN
+F 3 "~" H 2725 3400 50  0001 C CNN
+	1    2725 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60F08D35
+P 7125 4075
+F 0 "D1" V 7163 3958 50  0000 R CNN
+F 1 "LED" V 7072 3958 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 7125 4075 50  0001 C CNN
+F 3 "~" H 7125 4075 50  0001 C CNN
+	1    7125 4075
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensor:DHT11 U1
+U 1 1 60F08E40
+P 3950 3825
+F 0 "U1" H 3720 3871 50  0000 R CNN
+F 1 "DHT11" H 3720 3780 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4100 4075 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 4100 4075 50  0001 C CNN
+	1    3950 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60F08EF6
+P 4175 3200
+F 0 "R2" H 4245 3246 50  0000 L CNN
+F 1 "R" H 4245 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4105 3200 50  0001 C CNN
+F 3 "~" H 4175 3200 50  0001 C CNN
+	1    4175 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7125 3500 7125 3400
+Wire Wire Line
+	7125 3400 6500 3400
+Wire Wire Line
+	7125 3800 7125 3925
+Wire Wire Line
+	4900 3200 4525 3200
+Wire Wire Line
+	4525 3200 4525 3825
+Wire Wire Line
+	4525 3825 4250 3825
+Wire Wire Line
+	4325 3200 4525 3200
+Connection ~ 4525 3200
+Wire Wire Line
+	4025 3200 3850 3200
+Wire Wire Line
+	3850 3200 3850 3525
+Wire Wire Line
+	5300 5000 5300 5125
+Wire Wire Line
+	2650 2600 2650 2700
+Wire Wire Line
+	2650 2800 2650 2700
+Connection ~ 2650 2700
+Wire Wire Line
+	2725 3250 2725 2700
+Wire Wire Line
+	2725 2700 2650 2700
+NoConn ~ 6500 2800
+NoConn ~ 6500 2900
+NoConn ~ 6500 3100
+NoConn ~ 6500 3200
+NoConn ~ 6500 3500
+NoConn ~ 6500 3600
+NoConn ~ 6500 3800
+NoConn ~ 6500 3900
+NoConn ~ 6500 4000
+NoConn ~ 6500 4100
+NoConn ~ 6500 4200
+NoConn ~ 6500 4400
+NoConn ~ 6500 4500
+NoConn ~ 6000 5000
+NoConn ~ 5900 5000
+NoConn ~ 5800 5000
+NoConn ~ 5700 5000
+NoConn ~ 5600 5000
+NoConn ~ 5500 5000
+NoConn ~ 4900 4400
+NoConn ~ 4900 4300
+NoConn ~ 4900 4200
+NoConn ~ 4900 4100
+NoConn ~ 4900 4000
+NoConn ~ 4900 3900
+NoConn ~ 4900 3700
+NoConn ~ 4900 3600
+NoConn ~ 4900 3500
+NoConn ~ 4900 3300
+NoConn ~ 4900 3100
+NoConn ~ 4900 2900
+NoConn ~ 5500 2400
+NoConn ~ 5600 2400
+NoConn ~ 5900 2400
+Wire Wire Line
+	5800 2400 5800 2275
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60F17697
+P 2225 5300
+F 0 "#FLG0101" H 2225 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 2225 5474 50  0000 C CNN
+F 2 "" H 2225 5300 50  0001 C CNN
+F 3 "~" H 2225 5300 50  0001 C CNN
+	1    2225 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 5300 2225 5475
+$Comp
+L power:GND #PWR0101
+U 1 1 60F288F8
+P 7125 5125
+F 0 "#PWR0101" H 7125 4875 50  0001 C CNN
+F 1 "GND" H 7130 4952 50  0000 C CNN
+F 2 "" H 7125 5125 50  0001 C CNN
+F 3 "" H 7125 5125 50  0001 C CNN
+	1    7125 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 4225 7125 5125
+Wire Wire Line
+	5400 5000 5400 5125
+Wire Wire Line
+	5400 5125 5350 5125
+$Comp
+L power:GND #PWR0102
+U 1 1 60F2A8B2
+P 5350 5275
+F 0 "#PWR0102" H 5350 5025 50  0001 C CNN
+F 1 "GND" H 5355 5102 50  0000 C CNN
+F 2 "" H 5350 5275 50  0001 C CNN
+F 3 "" H 5350 5275 50  0001 C CNN
+	1    5350 5275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5275 5350 5125
+Connection ~ 5350 5125
+Wire Wire Line
+	5350 5125 5300 5125
+Wire Wire Line
+	2725 3550 2725 3975
+Wire Wire Line
+	2725 3975 2700 3975
+$Comp
+L power:GND #PWR0103
+U 1 1 60F2C5ED
+P 2700 3975
+F 0 "#PWR0103" H 2700 3725 50  0001 C CNN
+F 1 "GND" H 2705 3802 50  0000 C CNN
+F 2 "" H 2700 3975 50  0001 C CNN
+F 3 "" H 2700 3975 50  0001 C CNN
+	1    2700 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4700 3950 4700
+Wire Wire Line
+	3950 4700 3950 4725
+$Comp
+L power:GND #PWR0104
+U 1 1 60F2CB8C
+P 3950 4725
+F 0 "#PWR0104" H 3950 4475 50  0001 C CNN
+F 1 "GND" H 3955 4552 50  0000 C CNN
+F 2 "" H 3950 4725 50  0001 C CNN
+F 3 "" H 3950 4725 50  0001 C CNN
+	1    3950 4725
+	1    0    0    -1  
+$EndComp
+Text Label 4900 2800 2    50   ~ 0
+button_input
+Text Label 2725 2700 0    50   ~ 0
+button_input
+Text Label 5800 2275 0    50   ~ 0
+3V3
+Text Label 2075 2700 2    50   ~ 0
+3V3
+Text Label 3850 3200 2    50   ~ 0
+3V3
+Wire Wire Line
+	2250 2600 2250 2700
+Wire Wire Line
+	2250 2700 2075 2700
+Connection ~ 2250 2700
+Wire Wire Line
+	2250 2700 2250 2800
+Text Label 2225 5475 2    50   ~ 0
+3V3
+Wire Wire Line
+	3850 4125 3850 4700
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60F2F192
+P 2800 5075
+F 0 "#FLG0102" H 2800 5150 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 5249 50  0000 C CNN
+F 2 "" H 2800 5075 50  0001 C CNN
+F 3 "~" H 2800 5075 50  0001 C CNN
+	1    2800 5075
+	1    0    0    -1  
+$EndComp
+Text Label 2800 5375 0    50   ~ 0
+GND
+$Comp
+L Device:R R4
+U 1 1 60F2FCB7
+P 7975 3675
+F 0 "R4" H 8045 3721 50  0000 L CNN
+F 1 "R" H 8045 3630 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7905 3675 50  0001 C CNN
+F 3 "~" H 7975 3675 50  0001 C CNN
+	1    7975 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60F2FCED
+P 7975 4150
+F 0 "D2" V 8013 4033 50  0000 R CNN
+F 1 "LED" V 7922 4033 50  0000 R CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 7975 4150 50  0001 C CNN
+F 3 "~" H 7975 4150 50  0001 C CNN
+	1    7975 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 60F2FD1F
+P 7975 4975
+F 0 "#PWR01" H 7975 4725 50  0001 C CNN
+F 1 "GND" H 7980 4802 50  0000 C CNN
+F 2 "" H 7975 4975 50  0001 C CNN
+F 3 "" H 7975 4975 50  0001 C CNN
+	1    7975 4975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 3825 7975 4000
+Wire Wire Line
+	7975 4300 7975 4975
+Wire Wire Line
+	7975 3525 7975 3400
+Wire Wire Line
+	7975 3400 8000 3400
+Wire Wire Line
+	8000 3400 8000 3375
+Text Label 8000 3375 2    50   ~ 0
+3V3
+Wire Notes Line
+	1775 2075 1775 5750
+Wire Notes Line
+	1775 5750 3350 5750
+Wire Notes Line
+	3350 5750 3350 2075
+Wire Notes Line
+	3350 2075 1775 2075
+Wire Wire Line
+	2800 5075 2800 5375
+Wire Notes Line
+	3400 2075 3400 5750
+Wire Notes Line
+	3400 5750 4650 5750
+Wire Notes Line
+	4650 5750 4650 2075
+Wire Notes Line
+	4650 2075 3400 2075
+Wire Notes Line
+	6750 2075 4725 2075
+Wire Notes Line
+	4725 2075 4725 5750
+Wire Notes Line
+	6750 5750 6750 2075
+Wire Notes Line
+	4725 5750 6750 5750
+Text Notes 1975 2075 0    50   ~ 0
+N1 - Momentary button \n
+Text Notes 3650 2075 0    50   ~ 0
+N2 - Sensor\n
+Text Notes 4850 2075 0    50   ~ 0
+N3 - Raspberry Pi\n
+Wire Notes Line
+	6800 2075 6800 5750
+Wire Notes Line
+	6800 5750 7475 5750
+Wire Notes Line
+	7475 5750 7475 2075
+Wire Notes Line
+	7475 2075 6800 2075
+Wire Notes Line
+	7500 2075 7500 5750
+Wire Notes Line
+	7500 5750 8325 5750
+Wire Notes Line
+	8325 5750 8325 2075
+Wire Notes Line
+	8325 2075 7500 2075
+Text Notes 6725 2150 0    50   ~ 0
+N4 - Indicator LED \n\n
+Text Notes 7525 2075 0    50   ~ 0
+N5 - Power LED \n
+$EndSCHEMATC
